@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base style resets and body overrides */
+body {
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========================================================
+   MALIA PREMIUM LIGHT THEME ENGINE OVERRIDES
+   ======================================================== */
+.light-theme {
+  /* Core background, text, and border mapping overrides */
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+}
+
+.light-theme #app-viewport {
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+}
+
+.light-theme #app-header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #E5E7EB !important;
+}
+
+.light-theme #app-main-view {
+  background-color: #F9FAFB !important;
+}
+
+/* Custom background containers */
+.light-theme .bg-\[\#0F0F0F\] {
+  background-color: #F9FAFB !important;
+}
+
+.light-theme .bg-\[\#0F0F0F\]\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.light-theme .bg-\[\#1A1A1A\] {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme .bg-\[\#1A1A1A\]\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.light-theme .bg-\[\#252525\] {
+  background-color: #F3F4F6 !important;
+}
+
+.light-theme .bg-\[\#2A2A2A\] {
+  background-color: #E5E7EB !important;
+}
+
+.light-theme .bg-black {
+  background-color: #E5E7EB !important;
+}
+
+/* Specific elements background adjustments */
+.light-theme #role-switcher-group {
+  background-color: #F3F4F6 !important;
+  border-color: #E5E7EB !important;
+}
+
+.light-theme #switch-role-viewer {
+  color: #4B5563 !important;
+}
+.light-theme #switch-role-viewer.bg-\[\#2A2A2A\] {
+  background-color: #E5E7EB !important;
+  color: #4F46E5 !important;
+}
+
+.light-theme #switch-role-admin {
+  color: #4B5563 !important;
+}
+.light-theme #switch-role-admin.bg-\[\#2A2A2A\] {
+  background-color: #D1FAE5 !important;
+  color: #065F46 !important;
+}
+
+.light-theme #trigger-shorts-btn {
+  background-color: #FDF2F8 !important;
+  border-color: #FBCFE8 !important;
+  color: #DB2777 !important;
+}
+
+.light-theme #notification-bell-btn {
+  background-color: #F3F4F6 !important;
+  border-color: #E5E7EB !important;
+  color: #4B5563 !important;
+}
+
+.light-theme #notification-dropdown {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Borders overrides */
+.light-theme .border-\[\#2A2A2A\] {
+  border-color: #E5E7EB !important;
+}
+
+.light-theme .border-\[\#3A3A3A\] {
+  border-color: #D1D5DB !important;
+}
+
+.light-theme .border-indigo-900\/30 {
+  border-color: #C7D2FE !important;
+}
+
+/* Texts overrides */
+.light-theme .text-\[\#F1F1F1\] {
+  color: #111827 !important;
+}
+
+.light-theme .text-\[\#AAAAAA\] {
+  color: #374151 !important;
+}
+
+.light-theme .text-\[\#777777\] {
+  color: #6B7280 !important;
+}
+
+.light-theme .text-gray-300 {
+  color: #374151 !important;
+}
+
+.light-theme .text-gray-400 {
+  color: #4B5563 !important;
+}
+
+/* Form input styling */
+.light-theme input, 
+.light-theme textarea, 
+.light-theme select {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: #D1D5DB !important;
+}
+
+.light-theme input::placeholder, 
+.light-theme textarea::placeholder {
+  color: #9CA3AF !important;
+}
+
+/* Home view adjustments */
+.light-theme #category-pills-row button:not(.bg-indigo-600) {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #4B5563 !important;
+}
+
+.light-theme #category-pills-row button:not(.bg-indigo-600):hover {
+  background-color: #F3F4F6 !important;
+  color: #111827 !important;
+}
+
+.light-theme #ai-recs-shelf {
+  background-image: linear-gradient(to right, #EEF2F6, #FFFFFF, #F5F3FF) !important;
+  border-color: #E5E7EB !important;
+}
+
+.light-theme #video-description-card {
+  background-color: #F3F4F6 !important;
+  border-color: #E5E7EB !important;
+}
+
+.light-theme #video-description-card p {
+  color: #111827 !important;
+}
+
+.light-theme #video-description-card span {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #4B5563 !important;
+}
+
+.light-theme #video-chapters-container {
+  background-color: #EEF2F6 !important;
+  border-color: #C7D2FE !important;
+}
+
+/* Hover effects */
+.light-theme .hover\:bg-\[\#252525\]:hover {
+  background-color: #F3F4F6 !important;
+}
+
+.light-theme .hover\:bg-\[\#2A2A2A\]:hover {
+  background-color: #E5E7EB !important;
+}
+
+.light-theme .group:hover {
+  border-color: #818CF8 !important;
+}
+
+/* Creator Studio specific styling */
+.light-theme #studio-sidebar {
+  background-color: #FFFFFF !important;
+  border-right-color: #E5E7EB !important;
+}
+
+/* Admin Portal View adjustments */
+.light-theme #admin-overview-header {
+  border-bottom-color: #E5E7EB !important;
+}
+
+.light-theme .bg-emerald-950\/40 {
+  background-color: #D1FAE5 !important;
+  color: #065F46 !important;
+}
+
+.light-theme .bg-red-950\/40 {
+  background-color: #FEE2E2 !important;
+  color: #991B1B !important;
+}
+
+.light-theme .bg-amber-950\/40 {
+  background-color: #FEF3C7 !important;
+  color: #92400E !important;
+}
+
+.light-theme .bg-indigo-950\/40 {
+  background-color: #E0E7FF !important;
+  color: #3730A3 !important;
+}
+
+/* Charts and metrics details in SuperAdmin & Admin views */
+.light-theme #telemetry-panel .bg-\[\#1A1A1A\] {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+.light-theme #telemetry-panel svg line {
+  stroke: #E5E7EB !important;
+}
+
+.light-theme #accounts-panel table th {
+  background-color: #F3F4F6 !important;
+  color: #4B5563 !important;
+  border-bottom-color: #E5E7EB !important;
+}
+
+.light-theme #accounts-panel table tr {
+  border-bottom-color: #E5E7EB !important;
+}
+
+.light-theme #accounts-panel table tr:hover {
+  background-color: rgba(243, 244, 246, 0.5) !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}

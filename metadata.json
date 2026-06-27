@@ -1,0 +1,11 @@
+{
+  "name": "Malia Live",
+  "description": "A high-performance full-stack video streaming and live broadcasting platform featuring real-time interactive chats, creator studio dashboards, administrative controls, and AI-powered streams.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
